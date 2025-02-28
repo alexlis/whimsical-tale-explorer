@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { BookOpen, BookOpenText, Heart, Home, Search, Sparkles, VoiceIcon } from 'lucide-react';
+import { BookOpen, BookOpenText, Heart, Home, Search, Sparkles, Mic } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
@@ -37,7 +37,7 @@ const NavigationBar: React.FC = () => {
             <NavButton to="/" icon={<Home className="w-5 h-5" />} label="Home" />
             <NavButton to="/stories" icon={<BookOpen className="w-5 h-5" />} label="Stories" />
             <NavButton to="/favorites" icon={<Heart className="w-5 h-5" />} label="Favorites" />
-            <NavButton to="/read-aloud" icon={<VoiceIcon className="w-5 h-5" />} label="Read Aloud" />
+            <NavButton to="/read-aloud" icon={<Mic className="w-5 h-5" />} label="Read Aloud" />
           </nav>
         </div>
       </div>
@@ -47,7 +47,7 @@ const NavigationBar: React.FC = () => {
           <NavIcon to="/" icon={<Home className="w-6 h-6" />} label="Home" />
           <NavIcon to="/stories" icon={<BookOpen className="w-6 h-6" />} label="Stories" />
           <NavIcon to="/favorites" icon={<Heart className="w-6 h-6" />} label="Favorites" />
-          <NavIcon to="/read-aloud" icon={<VoiceIcon className="w-6 h-6" />} label="Read" />
+          <NavIcon to="/read-aloud" icon={<Mic className="w-6 h-6" />} label="Read" />
         </nav>
       </div>
     </header>
